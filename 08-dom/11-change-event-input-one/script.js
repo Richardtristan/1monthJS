@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("pass-one").maxLength = 10;
 
+    document.getElementById("pass-one").onkeyup=function()
+        {
+    var count = document.getElementById("pass-one").value.length;
+    document.getElementById("counter").innerHTML = count + "/10";
+        }
 })();

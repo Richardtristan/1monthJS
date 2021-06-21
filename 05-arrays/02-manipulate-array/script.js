@@ -14,12 +14,14 @@
         "raisin",
         "cerise",
     ];
+
     document.getElementById("run").onclick=function()
     {    
     fruits[0] = "banana";
     fruits[9] = "kiwi";
     alert(fruits);
     }
+
 
 
 })();

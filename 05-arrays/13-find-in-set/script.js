@@ -13,6 +13,10 @@
         "Simon",
         "Lucas",
     ]);
+    document.getElementById("run").onclick=function()
+    {    
+console.log(people.size)
+console.log("Alexandre est dans le set ? : " + (people.has("Alexandre") ? "oui" : "non"))
 
-    // your code here
+    }
 })();

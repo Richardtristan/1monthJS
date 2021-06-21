@@ -3,6 +3,7 @@
 
 
 (() => {
+
     document.getElementById("run").addEventListener("click", function() {
         
             var a = document.getElementById("year").value;
@@ -68,5 +69,6 @@ console.log(arr);
 alert("les mois des vendredi 13 sont : " + arr);
         
 });
+
 
 })();

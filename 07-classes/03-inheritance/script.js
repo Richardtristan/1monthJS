@@ -2,10 +2,31 @@
 
 
 (() => {
+    document.getElementById("run").onclick=function()
+    {  
     class Animal {
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
+    class Dog extends Animal{
+        static greeting = "hello";
+        constructor(name){
+            super();
+            this.name = name;
+        }
+    }
+
+    class Cat extends Animal{
+        static greeting = "hello";
+        constructor(name){
+            super();
+            this.name = name;
+        }
+    }
+    let dog = new Dog("Dogs");
+    let cat = new Cat("Cat");
+    console.log(dog.sayHello())
+    console.log(cat.sayHello())
+}
 })();

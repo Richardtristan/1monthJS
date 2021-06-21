@@ -2,5 +2,15 @@
 
 
 (() => {
-    // your code here
+    document.getElementById("run").onclick=function()
+    {  
+    let moi = {
+        firstname :  "Tristan",
+        lastname : "Richard",
+        age : 27,
+        city : "Soignies",
+        country : "Belgium"
+    }
+    console.log(moi)
+}
 })();

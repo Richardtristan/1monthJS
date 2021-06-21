@@ -20,6 +20,17 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        arr = [];
+        for (let i = 0; i < fruits.length; i++) {
+            if (fruits[i] > 0) {
+                arr.push(fruits[i]);
+            }
+        }
+        const filteredArray = fruits.filter(function(ele , pos){
+            return fruits.indexOf(ele) == pos;
+        }) 
+        console.log(filteredArray);
+    });
 
 })();

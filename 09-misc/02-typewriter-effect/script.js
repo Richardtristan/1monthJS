@@ -2,7 +2,20 @@
 
 
 (() => {
+    var target = document.getElementById("target");
+    var txt = target.innerHTML;
+    var caract = txt.split("");
+    target.innerHTML = "";
+    var count = 0;
+    
+    var inter = setInterval(() => { 
+    target.innerHTML = target.innerHTML + caract[count];
 
-    // your code here
+        count++;
+        if (count>= caract.length){
+            clearInterval(inter);
+        }
+    }, 100);
 
+    
 })();

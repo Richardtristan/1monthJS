@@ -4,6 +4,7 @@
 
 (() => {
 
+
     document.getElementById("run").onclick=function()
     {
         var x, y, z, random_col;
@@ -14,5 +15,6 @@
 
         document.body.style.backgroundColor = random_col;
     }
+
 
 })();

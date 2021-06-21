@@ -81,6 +81,16 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;
+        arr = [];
+        for (let i = 0; i < people.length; i++) {
+            if (people[i].age > 0) {
+                arr.push(people[i].age);
+            }
+            
+        }
+        console.log(arr.reduce(reducer));
+    });
 
 })();

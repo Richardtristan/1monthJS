@@ -4,6 +4,7 @@
 
 (() => {
 
+
     function MessageParDate(){
         var date = new Date();
         var day = date.getDay();
@@ -80,5 +81,6 @@
 
 }
 document.getElementById("target").innerHTML = MessageParDate()
+
 
 })();

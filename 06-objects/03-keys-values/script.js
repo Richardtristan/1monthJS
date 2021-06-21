@@ -10,5 +10,9 @@
         city: "Liège",
         status: "married",
     };
-    // your code here
+    document.getElementById("run").onclick=function()
+    {    
+console.log(Object.keys(person))
+console.log(Object.values(person))
+    }
 })();

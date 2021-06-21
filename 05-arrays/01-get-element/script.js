@@ -16,8 +16,10 @@
         "grap",
         "cherry",
     ];
+
     document.getElementById("run").onclick=function()
     {
     alert(fruits[3]);
     }
+
 })();

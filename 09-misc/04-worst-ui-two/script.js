@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+var output = document.getElementById("part-one");
+
+
+oninput = function() {
+  output.innerHTML = "0" + this.value;
+}
 
 })();
