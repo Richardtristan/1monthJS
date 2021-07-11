@@ -3,7 +3,6 @@
 
 
 (() => {
-   
     function MessageParDate(){
         var heure = new Date().getHours();
         var minutes = new Date().getMinutes();

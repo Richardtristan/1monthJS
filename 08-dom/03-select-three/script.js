@@ -3,6 +3,11 @@
 
 (() => {
 
-    // your code here
+    let elements = document.querySelectorAll(".target")
+
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        element.innerHTML = "owned";
+    }
 
 })();

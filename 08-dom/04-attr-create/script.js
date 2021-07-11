@@ -3,6 +3,16 @@
 
 (() => {
 
-    // your code here
+    
 
+        var monImage = document.createElement('img');
+    
+        monImage.src = "http://www.randomkittengenerator.com/cats/rotator.php";
+    
+        var maDiv = document.getElementById("target");
+    
+        maDiv.appendChild(monImage);
+        var el = document.getElementById("source");
+        el.remove();
+    
 })();

@@ -2,6 +2,7 @@
 
 (() => {
 
-    // your code here
+    var el = document.getElementById("target");
+    el.innerHTML = "owned";
 
 })();

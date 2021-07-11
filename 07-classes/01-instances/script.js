@@ -7,6 +7,12 @@
             this.name = name;
             this.age = age;
         }
+    } 
+    document.getElementById("run").onclick=function()
+    {  
+    let cat1 = new Cat("Skitty", 9);
+    let cat2 = new Cat("Pixel", 7);
+
+    console.log(cat1, cat2)
     }
-    // your code here
 })();

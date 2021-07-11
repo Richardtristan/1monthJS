@@ -3,6 +3,6 @@
 
 (() => {
 
-    // your code here
-
+   let element = document.querySelector(".material p");
+   element.innerHTML = "owned";
 })();

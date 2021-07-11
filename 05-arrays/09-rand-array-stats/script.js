@@ -1,4 +1,3 @@
-  
 // 05-arrays/09-rand-array-stats/script.js - 5.9: random & statistics array
 
 (() => {
@@ -7,17 +6,19 @@
     document.getElementById("run").addEventListener("click", () => {
         
         var array = [];
-        for (let a = 1; a < 11; a++) {
+        for (let i = 1; i < 11; i++) {
             var randomNUmber = Math.ceil(Math.random() * 100);
-            document.getElementById("n-" + a).innerHTML = randomNUmber;
+            document.getElementById("n-"+i).innerHTML = randomNUmber;
             array.push(randomNUmber);
             
         }
-        let min = Math.min(...array);
-        let max = Math.max(...array);
-        let sum = 0;
-        for (let a = 0;  a < array.length; a++) {
-            sum = sum + array[a];
+        var min = Math.min(...array);
+        var max = Math.max(...array);
+
+        var sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum += array[i];
+            
         }
         document.getElementById("min").innerHTML = min;
         document.getElementById("max").innerHTML = max;

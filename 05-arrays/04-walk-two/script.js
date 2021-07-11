@@ -17,6 +17,8 @@
         "raisin",
         "cerise",
     ];
+
+
     document.getElementById("run").onclick=function()
     {    
     fruits.forEach(element => {

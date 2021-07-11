@@ -15,5 +15,12 @@
         "cherry",
     ]);
 
-    // your code here
+    document.getElementById("run").onclick=function()
+    {    
+    fruits.delete("cherry");
+    fruits.delete("apple")
+    fruits.add("banana");
+    fruits.add("Kiwi")
+    console.log(fruits);
+    }
 })();

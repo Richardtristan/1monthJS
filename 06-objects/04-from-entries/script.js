@@ -4,5 +4,16 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+
+    document.getElementById("run").onclick=function()
+    {    
+let arr = [];
+for (let i = 0; i < keys.length; i++) {
+    const element = [ keys[i], values[i] ];
+    arr.push(element);
+}
+    let obj = Object.fromEntries(arr);
+        console.log(obj);
+
+    }
 })();

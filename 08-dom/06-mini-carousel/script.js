@@ -10,7 +10,19 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
+    var counter = 0;
+    var target = document.querySelector(".material figure img")
 
-    // your code here
+    function next(){
+        counter= counter +1;    
+        if (counter > gallery.length -1){    
+            counter = 0;    
+        }            
+        target.src = gallery[counter];
+    }        
+
+    document.getElementById("next").onclick=function(){
+        next();
+    }
 
 })();
